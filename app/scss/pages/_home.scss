@@ -1,0 +1,128 @@
+.section {
+  padding: 64px 0 0;
+  &__title_wrap {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-right: 16px;
+  }
+  &__title_icon {
+    width: 60px;
+    height: 13px;
+  }
+}
+
+/*****Main Screen*****/
+.main-screen {
+  padding: 170px 0;
+  background: $dark;
+  &__offer {
+    max-width: 580px;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: left;
+    color: $light;
+    margin-bottom: 32px;
+  }
+  &__subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: $light;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    padding: 16px 32px;
+    color: $light;
+    background: $secondary;
+    box-shadow: 0px 15px 35px rgba(255, 92, 0, 0.25);
+    border-radius: 55px;
+    transition: .35s;
+    display: block;
+    width: fit-content;
+    &:hover {
+      background: $secondary_d3;
+      color: $light;
+      transition: .35s;
+    }
+  }
+}
+@include tablet {
+  .main-screen__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .main-screen__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+/*****Works*****/
+.works {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__item_icon {
+    min-width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 43px;
+    background: $default;
+    box-shadow: 0px 0px 55px rgba(153, 242, 101, 0.55);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    &:before {
+      content: "";
+      display: block;
+      min-width: 79px;
+      height: 79px;
+      border-radius: 50px;
+      background: $default;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: .25;
+    }
+  }
+}
+@include laptop {
+  .works__image {
+    margin: 0 auto 32px;
+  }
+}
+@include phones {
+  .works__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .works__item_icon {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+  .works__item_description {
+    text-align: center;
+  }
+}

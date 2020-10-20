@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium", medium);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", bold);
+
+
+@include font-face("icomoon", "../fonts/icomoon/icomoon");
