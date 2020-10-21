@@ -13,16 +13,20 @@
     height: 13px;
   }
 }
-
+@include phones {
+  .section__title_icon {
+    display: none;
+  }
+}
 /*****Main Screen*****/
 .main-screen {
-  padding: 170px 0;
-  background: $dark;
+  padding: 51px 0 0;
+  background: $dark url(../img/main-screen/main-screen-bg.jpg) no-repeat center center/cover;
   &__offer {
     max-width: 580px;
   }
   &__title {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
@@ -32,7 +36,7 @@
     margin-bottom: 32px;
   }
   &__subtitle {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -55,8 +59,12 @@
       transition: .35s;
     }
   }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
 }
-@include tablet {
+@include desktop{
   .main-screen__title {
     font-size: 24px;
     line-height: 34px;
@@ -64,6 +72,11 @@
   .main-screen__subtitle {
     font-size: 22px;
     line-height: 30px;
+  }
+}
+@include tablet {
+  .main-screen {
+    padding: 64px 0;
   }
 }
 
@@ -126,3 +139,269 @@
     text-align: center;
   }
 }
+
+/*****For*****/
+
+.for {
+  padding-bottom: 64px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: 25%;
+    height: auto;
+    position: relative;
+  }
+  &__item_image {
+    width: 100%;
+    height: auto;
+  }
+  &__item_description_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__item_description {
+    padding: 16px;
+    color: $light;
+  }
+}
+@media screen and (max-width: 944.5px) {
+  .for__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .for__item {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 643.5px) {
+  .for__item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 476.5px) {
+  .for__item {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400.5px) {
+  .for__item {
+    width: 100%;
+  }
+}
+
+/*****Advatages*****/
+.advantages {
+  background: $dark_3;
+  &__title {
+    color: $light;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item_dott {
+    min-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: (0px 7px 15px rgba(78, 158, 32, 0.45));
+    background: $default;
+    margin-right: 24px;
+  }
+  &__item_description {
+    color: $light;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
+@include laptop {
+  .advantages__list {
+    margin-bottom: 32px;
+  }
+}
+
+/*****Equipment*****/
+.equipment {
+  padding-bottom: 64px;
+  &__item {
+    padding: 32px;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-bottom: 32px;
+  }
+  &__item_title {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  &__item_image {
+    max-width: 225px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 32px;
+  }
+  &__parameters_list {
+    margin-bottom: 32px;
+  }
+  &__parameters_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  &__parameters_item_icon {
+    min-width: 28px;
+    height: 28px;
+    margin-right: 16px;
+  }
+  &__parameters_description-noactive {
+    color: $dark_8;
+  }
+  &__item_description {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    padding: 16px 32px;
+    background: $secondary;
+    color: $light;
+    transition: .35s;
+    border-radius: 55px;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    &:hover {
+      background: $secondary_d3;
+    color: $light;
+    transition: .35s;
+    }
+  }
+}
+@include desktop {
+  .equipment {
+    padding-bottom: 32px;
+  }
+  .equipment__item {
+    padding: 32px 16px;
+  }
+}
+
+/*****Main form*****/
+.main-form {
+  padding-bottom: 64px;
+  background: $default;
+  &__title_wrap {
+    margin-bottom: 16px;
+    color: $light;
+  }
+  &__subtitle {
+    color: $light;
+    margin-bottom: 32px;
+  }
+  &__form_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__input {
+    background: $light;
+    border-radius: 55px;
+    padding: 16px 32px;
+    border: none;
+    &::placeholder {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: $dark_5;
+    }
+  }
+  &__name {
+    width: 19%;
+  }
+  &__email {
+    width: 22%;
+  }
+  &__messege {
+    width: 38%;
+  }
+  &__btn {
+    padding: 16px 32px;
+    background: $dark;
+    color: $light;
+    transition: .35s;
+    border: none;
+    border-radius: 55px;
+    &:hover {
+      background: $dark_5;
+      color: $light;
+      transition: .35s;
+    }
+  }
+  &__form_label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 16px;
+    > .main-form__form_checkbox:checked + .main-form__form_checkbox-span::after {
+      content: "";
+      position: absolute;
+      transition: all .2s ease;
+      left: 3px;
+      top: 50%;
+      width: 13px;
+      height: 9px;
+      border-radius: 1px;
+      border-left: 3px solid $secondary;
+      border-bottom: 3px solid $secondary;
+      transform: translate(0,-66%) rotate(-45deg);
+    }
+  }
+  &__form_checkbox {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+  }
+  &__form_checkbox-span {
+    display: block;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 0.5px solid $dark_5;
+    background: $light;
+    position: relative;
+  }
+  &__form_label_link {
+    color: $dark;
+  }
+}
+@include laptop {
+  .main-form__form_wrap {
+    flex-direction: column;
+  }
+  .main-form__name, .main-form__email, .main-form__messege {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 16px;
+  }
+}
+@include tablet {
+  .main-form__name, .main-form__email, .main-form__messege {
+    width: 100%;
+  }
+}
+

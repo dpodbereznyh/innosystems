@@ -23,11 +23,11 @@
             </a>
             <!-- Sample menu definition -->
             <ul id="main-menu" class="sm sm-clean">
-                <li><a href="#" class="p yakor">Как это работает</a></li>
-                <li><a href="#" class="p yakor">Для кого</a></li>
-                <li><a href="#" class="p yakor">Преимущества</a></li>
-                <li><a href="#" class="p yakor">Комплектации</a></li>
-                <li><a href="#" class="p yakor">Контакты</a></li>
+                <li><a href="#works" class="p yakor">Как это работает</a></li>
+                <li><a href="#for" class="p yakor">Для кого</a></li>
+                <li><a href="#advantages" class="p yakor">Преимущества</a></li>
+                <li><a href="#equipment" class="p yakor">Комплектации</a></li>
+                <li><a href="#footer" class="p yakor">Контакты</a></li>
                 <li class="header__phone">
                     <div class="header__phone_icon">
                         <img src="../img/header/header-phone-icon.svg" alt="Контактный телефон">
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="header__btn_wrap">
-                    <a href="#" data-src="#popup-form" data-fancybox class="header__btn h6" data-title="ОБРАТНЫЙ ЗВОНОК" data-input="ОБРАТНЫЙ ЗВОНОК с шапки" >
+                    <a href="#" data-src="#popup-form" data-fancybox class="header__btn h6 js-callback" data-title="Обратный звонок" data-input="Обратный звонок с шапки">
                         ОБРАТНЫЙ ЗВОНОК
                     </a>
                 </li>
@@ -48,17 +48,27 @@
 <main class="main">
     <section class="main-screen">
         <div class="container-fluid">
-            <div class="main-screen__offer">
-                <h1 class="main-screen__title">
-                    ДЕЗИНФЕКЦИОННЫЕ РАМКИ<br>“ИННОСИСТЕМС”<br>ОТ ПРОИЗВОДИТЕЛЯ<br>ОПТОМ И В РОЗНИЦУ
-                </h1>
-                <p class="main-screen__subtitle">
-                    Быстрая, надежная и экономичная дезинфекция большого потока людей
-                </p>
-                <a href="#" data-src="#popup-form" data-fancybox class="main-screen__btn h6" data-title="ОБРАТНЫЙ ЗВОНОК" data-input="ОБРАТНЫЙ ЗВОНОК с шапки" >
-                    УЗНАТЬ СТОИМОСТЬ
-                </a>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <div class="main-screen__offer">
+                        <h1 class="main-screen__title">
+                            ДЕЗИНФЕКЦИОННЫЕ РАМКИ<br>“ИННОСИСТЕМС”<br>ОТ ПРОИЗВОДИТЕЛЯ<br>ОПТОМ И В РОЗНИЦУ
+                        </h1>
+                        <p class="main-screen__subtitle">
+                            Быстрая, надежная и экономичная дезинфекция большого потока людей
+                        </p>
+                        <a href="#" data-src="#popup-form" data-fancybox class="main-screen__btn h6 js-callback" data-title="Узнать стоимость" data-input="Узнать стоимость" >
+                            УЗНАТЬ СТОИМОСТЬ
+                        </a>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6 col-lg-5">
+                    <div class="main-screen__image">
+                        <img src="img/main-screen/main-screen-image.png" alt="">
+                    </div>
+                </div>
             </div>
+            
         </div>       
     </section>
     <section class="works section" id="works">
@@ -115,10 +125,412 @@
             </div>
         </div>
     </section>
+    <section class="for section" id="for">
+        <div class="container-fluid">
+            <div class="section__title_wrap">
+                <h2 class="section__title h2">
+                    ДЛЯ КОГО НЕОБХОДИМЫ<br>ДЕЗИНФЕКЦИОННЫЕ РАМКИ “ИННОСИСТЕМС”?
+                </h2>
+                <div class="section__title_icon">
+                    <img src="img/works/works-title-icon.svg" alt="">
+                </div>
+            </div>
+            <ul class="for__list">
+                <li class="for__item">
+                    <div class="for__item_image">
+                        <img src="img/for/for-image-1.jpg" alt="">
+                    </div>
+                    <div class="for__item_description_wrap">
+                        <p class="for__item_description h3">
+                            Для медицинских<br>организаций
+                        </p>
+                    </div>
+                </li>  
+                <li class="for__item">
+                    <div class="for__item_image">
+                        <img src="img/for/for-image-2.jpg" alt="">
+                    </div>
+                    <div class="for__item_description_wrap">
+                        <p class="for__item_description h3">
+                            Для учебных<br>заведений
+                        </p>
+                    </div>
+                </li> 
+                <li class="for__item">
+                    <div class="for__item_image">
+                        <img src="img/for/for-image-3.jpg" alt="">
+                    </div>
+                    <div class="for__item_description_wrap">
+                        <p class="for__item_description h3">
+                            Для предприятий<br>и производств
+                        </p>
+                    </div>
+                </li>  
+                <li class="for__item">
+                    <div class="for__item_image">
+                        <img src="img/for/for-image-4.jpg" alt="">
+                    </div>
+                    <div class="for__item_description_wrap">
+                        <p class="for__item_description h3">
+                            Для продуктовых<br>сетей и торговых<br>центров
+                        </p>
+                    </div>
+                </li>                
+            </ul>
+        </div>
+    </section>
+    <section class="advantages section" id="advantages">
+        <div class="container-fluid">
+            <div class="section__title_wrap">
+                <h2 class="section__title advantages__title h2">
+                    ПРЕИМУЩЕСТВА ДЕЗИНФЕКЦИОННОЙ<br>РАМКИ “ИННОСИСТЕМС”
+                </h2>
+                <div class="section__title_icon">
+                    <img src="img/advantages/advantages-title-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Возможность брендировать под фирменный стиль заказчика;
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Мгновенный монтаж;
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Возможность использовать любые дезинфицирующие растворы;
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Тщательная дезинфекция за счет использования системы туманообразования;  
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Модульная структура, позволяющая дополнительно установить камеру распознавания лиц, бесконтактный датчик температуры тела;  
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Высокая надежность;
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Большой бак для дезинфицирующего раствора
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Доступность для маломобильных групп населения
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__item_dott"></div>
+                            <p class="advantages__item_description p">
+                                Небольшой вес, мобильность установки
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offset-4 col-4 offset-lg-1 col-lg-4">
+                    <div class="advantages__image">
+                        <img src="img/advantages/advantages-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="equipment section" id="equipment">
+        <div class="container-fluid">
+            <div class="section__title_wrap">
+                <h2 class="section__title h2">
+                    КОМПЛЕКТАЦИИ
+                </h2>
+                <div class="section__title_icon">
+                    <img src="img/works/works-title-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="equipment__item">
+                        <h3 class="equipment__item_title h3">
+                            Комплектация 1
+                        </h3>
+                        <div class="equipment__item_image">
+                            <img src="img/equipment/equipment-item-image.jpg" alt="">
+                        </div>
+                        <ul class="equipment__parameters_list">
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    дезинфицирующая рамка
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-noactive.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description equipment__parameters_description-noactive h5">
+                                    датчик температуры
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-noactive.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description equipment__parameters_description-noactive h5">
+                                    камера распознавания лиц
+                                </h5>
+                            </li>
+                        </ul>
+                        <p class="equipment__item_description p">
+                            Имеется спорная точка зрения: многие известные личности будут указаны как претенденты на роль ключевых факторов
+                        </p>
+                        <a href="#" data-src="#popup-form" data-fancybox class="equipment__btn h6 js-callback" data-title="Получить КП" data-input="Получить КП c комплектации 1">
+                            ПОЛУЧИТЬ КП
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="equipment__item">
+                        <h3 class="equipment__item_title h3">
+                            Комплектация 2
+                        </h3>
+                        <div class="equipment__item_image">
+                            <img src="img/equipment/equipment-item-image.jpg" alt="">
+                        </div>
+                        <ul class="equipment__parameters_list">
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    дезинфицирующая рамка
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    датчик температуры
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-noactive.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description equipment__parameters_description-noactive h5">
+                                    камера распознавания лиц
+                                </h5>
+                            </li>
+                        </ul>
+                        <p class="equipment__item_description p">
+                            Имеется спорная точка зрения: многие известные личности будут указаны как претенденты на роль ключевых факторов
+                        </p>
+                        <a href="#" data-src="#popup-form" data-fancybox class="equipment__btn h6 js-callback" data-title="Получить КП" data-input="Получить КП c комплектации 2">
+                            ПОЛУЧИТЬ КП
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="equipment__item">
+                        <h3 class="equipment__item_title h3">
+                            Комплектация 3
+                        </h3>
+                        <div class="equipment__item_image">
+                            <img src="img/equipment/equipment-item-image.jpg" alt="">
+                        </div>
+                        <ul class="equipment__parameters_list">
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    дезинфицирующая рамка
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-noactive.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description equipment__parameters_description-noactive h5">
+                                    датчик температуры
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    камера распознавания лиц
+                                </h5>
+                            </li>
+                        </ul>
+                        <p class="equipment__item_description p">
+                            Имеется спорная точка зрения: многие известные личности будут указаны как претенденты на роль ключевых факторов
+                        </p>
+                        <a href="#" data-src="#popup-form" data-fancybox class="equipment__btn h6 js-callback" data-title="Получить КП" data-input="Получить КП c комплектации 3">
+                            ПОЛУЧИТЬ КП
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="equipment__item">
+                        <h3 class="equipment__item_title h3">
+                            Комплектация 4
+                        </h3>
+                        <div class="equipment__item_image">
+                            <img src="img/equipment/equipment-item-image.jpg" alt="">
+                        </div>
+                        <ul class="equipment__parameters_list">
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    дезинфицирующая рамка
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    датчик температуры
+                                </h5>
+                            </li>
+                            <li class="equipment__parameters_item">
+                                <div class="equipment__parameters_item_icon">
+                                    <img src="img/equipment/equipment-icon-active.svg" alt="">
+                                </div>
+                                <h5 class="equipment__parameters_description h5">
+                                    камера распознавания лиц
+                                </h5>
+                            </li>
+                        </ul>
+                        <p class="equipment__item_description p">
+                            Имеется спорная точка зрения: многие известные личности будут указаны как претенденты на роль ключевых факторов
+                        </p>
+                        <a href="#" data-src="#popup-form" data-fancybox class="equipment__btn h6 js-callback" data-title="Получить КП" data-input="Получить КП c комплектации 4">
+                            ПОЛУЧИТЬ КП
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-form section">
+        <div class="container-fluid">
+            <div class="section__title_wrap main-form__title_wrap">
+                <h2 class="section__title h2">
+                    ОСТАЛИСЬ ВОПРОСЫ?
+                </h2>
+                <div class="section__title_icon">
+                    <img src="img/advantages/advantages-title-icon.svg" alt="">
+                </div>
+            </div>
+            <p class="main-form__subtitle h3">
+                Хотите уточнить детали, узнать стоимость?<br>Заполните форму и мы позвоним в течение часа
+            </p>
+            <form class="main-form__form">
+                <div class="main-form__form_wrap">
+                    <input type="text" name="name" placeholder="Имя" class="main-form__name main-form__input">
+                    <input type="text" name="email" placeholder="Телефон / почта" class="main-form__email main-form__input">
+                    <input type="text" name="messege" placeholder="Вопрос" class="main-form__messege main-form__input"></input>
+                    <input type="submit" class="main-form__btn">
+                </div>
+                <label class="main-form__form_label">
+                    <input type="checkbox" id="checkbox" class="main-form__form_checkbox" checked required>
+                    <span class="main-form__form_checkbox-span"></span>
+                    <span class="very-small main-form__form_label_link">
+                        Согласен на обработку персональных данных, ознакомлен с политикой конфиденциальности
+                    </span>
+                </label>
+            </form>
+        </div>
+    </section>
 </main>
 <footer class="footer" id="footer">
-   
+   <div class="container-fluid">
+    <div class="section__title_wrap footer__title_wrap">
+        <h2 class="section__title h2">
+            КОНТАКТЫ
+        </h2>
+        <div class="section__title_icon">
+            <img src="img/works/works-title-icon.svg" alt="">
+        </div>
+    </div>
+    <p class="footer__subtitle h3">
+        Мы всегда на связи - звоните, пишите, приезжайте
+    </p>
+    <ul class="footer__contacts_list">
+        <li class="footer__contacts_item">
+            <div class="footer__contacts_item_icon">
+                <img src="img/footer/location-icon.svg" alt="" class="footer__contacts_item_icon-location">
+            </div>
+            <p class="footer__contacts_item_location strong">
+                г. Пермь, ул. Борцов<br>Революции, 8А
+            </p>
+        </li>
+        <li class="footer__contacts_item">
+            <div class="footer__contacts_item_icon">
+                <img src="img/footer/phone-icon.svg" alt="" class="footer__contacts_item_icon-phone">
+            </div>
+            <a href="tel:88003339697" class="footer__contacts_item_link strong">
+                8 800 333 96 97
+            </a>
+        </li>
+        <li class="footer__contacts_item">
+            <div class="footer__contacts_item_icon">
+                <img src="img/footer/email-icon.svg" alt="" class="footer__contacts_item_icon-email">
+            </div>
+            <a href="mailto:info@innosystem.ru" class="footer__contacts_item_link strong">
+                info@innosystem.ru
+            </a>
+        </li>
+    </ul>
+   </div>
 </footer>
+<div class="d-none">
+    <form id="popup-form">
+        <div class="popup-form">
+            <h3 class="popup-form__title js-title h2"></h3>
+            <input class="popup-form__input js-zakaz" type="hidden" value="" name="title">
+            <input class="popup-form__input" type="text" placeholder="Ваше имя" name="name">
+            <input class="popup-form__input" type="tel" placeholder="Ваш телефон" name="phone" required>
+            <button type="submit" class="popup-form__btn ">Отправить</button>       
+            <label class="main-form__form_label">
+                <input type="checkbox" id="checkbox" class="main-form__form_checkbox" checked required>
+                <span class="main-form__form_checkbox-span"></span>
+                <span class="very-small main-form__form_label_link">
+                    Согласен на обработку персональных данных, ознакомлен с политикой конфиденциальности
+                </span>
+            </label>
+        </div>
+    </form>
+    <div id="fancyalert" class="fancyalert">
+        <div class="fancyalert-text">Спасибо за заявку,<br> в ближайшее время с Вами свяжутся!</div>
+    </div>
+</div>
 
 
 <script src="js/scripts.min.js"></script>

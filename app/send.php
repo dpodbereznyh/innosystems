@@ -27,20 +27,23 @@ catch (Exception $e) {
 
 
 
-$message = "<h1>APIMedia</h1>";
+$message = "<h1>INNOSYSTEMS</h1>";
+if (isset($_POST['title'])) {
+	$message .= "Заголовок: ".$_POST['title']."<br />";
+}
 if (isset($_POST['name'])) {
 	$message .= "Имя: ".$_POST['name']."<br />";
 }
 if (isset($_POST['phone'])) {
 	$message .= "Телефон: ".$_POST['phone']."<br />";
 }
+if (isset($_POST['email'])) {
+	$message .= "Телефон / почта: ".$_POST['email']."<br />";
+}
 if (isset($_POST['messege'])) {
 	$message .= "Сообщение: ".$_POST['messege']."<br />";
 }
 
-if (isset($_POST['title'])) {
-	$message .= "Заголовок: ".$_POST['title']."<br />";
-}
 
 
 
@@ -49,7 +52,7 @@ if (isset($_POST['title'])) {
 
 // Письмо
 $mail->isHTML(true);
-$mail->Subject = 'Заявка с сайта APIMedia'; // Заголовок письма
+$mail->Subject = 'Заявка с сайта INNOSYSTEMS'; // Заголовок письма
 $mail->Body = $message; // Текст письма
 $mail->CharSet = "utf-8";
 // Результат
