@@ -17,7 +17,7 @@ try {
 	$mail->Port = 465;
 	$mail->setFrom('no-reply@gridstudio.ru'); // Ваш Email
 	$mail->addAddress($recipient_mail1); // Email получателя
-	$mail->addAddress('id@apimedia.ru'); // Email получателя
+	$mail->addAddress('pdv@apimedia.ru'); // Email получателя
 }
 
 

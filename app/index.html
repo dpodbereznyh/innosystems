@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="yandex-verification" content="500d1bee24d22d81">
     <title>ИННОСИСТЕМС</title>
     <link rel="icon" href="/img/header/header-logo.svg">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
 <header class="header">
     <div class="container-fluid">
@@ -37,7 +38,7 @@
                     </a>
                 </li>
                 <li class="header__btn_wrap">
-                    <a href="#" data-src="#popup-form" data-fancybox class="header__btn h6 js-callback" data-title="Обратный звонок" data-input="Обратный звонок с шапки">
+                    <a id="add-product" href="#" data-src="#popup-form" data-fancybox class="header__btn h6 js-callback" data-goal="clickToHeaderPopup" data-send="sendToHeaderPopup" data-title="Обратный звонок" data-input="Обратный звонок с шапки">
                         ОБРАТНЫЙ ЗВОНОК
                     </a>
                 </li>
@@ -57,7 +58,7 @@
                         <p class="main-screen__subtitle">
                             Быстрая, надежная и экономичная дезинфекция большого потока людей
                         </p>
-                        <a href="#" data-src="#popup-form" data-fancybox class="main-screen__btn h6 js-callback" data-title="Узнать стоимость" data-input="Узнать стоимость" >
+                        <a href="#" data-src="#popup-form" data-fancybox class="main-screen__btn h6 js-callback js-onClickGoal" data-title="Узнать стоимость" data-input="Узнать стоимость" >
                             УЗНАТЬ СТОИМОСТЬ
                         </a>
                     </div>
@@ -268,7 +269,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-xl-3">
-                    <div class="equipment__item">
+                    <div class="equipment__item" id="product" >
                         <h3 class="equipment__item_title h3">
                             Комплектация 1
                         </h3>
@@ -511,13 +512,13 @@
    </div>
 </footer>
 <div class="d-none">
-    <form id="popup-form">
+    <form id="popup-form" class="js-form-default">
         <div class="popup-form">
             <h3 class="popup-form__title js-title h2"></h3>
             <input class="popup-form__input js-zakaz" type="hidden" value="" name="title">
             <input class="popup-form__input" type="text" placeholder="Ваше имя" name="name">
             <input class="popup-form__input" type="tel" placeholder="Ваш телефон" name="phone" required>
-            <button type="submit" class="popup-form__btn ">Отправить</button>       
+            <button type="submit" class="popup-form__btn js-validate-form js-onClickGoal">Отправить</button>       
             <label class="main-form__form_label">
                 <input type="checkbox" id="checkbox" class="main-form__form_checkbox" checked required>
                 <span class="main-form__form_checkbox-span"></span>

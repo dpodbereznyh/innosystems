@@ -48,7 +48,7 @@ gulp.task('scripts', function() {
         'app/js/common.js', // Always at the end
     ])
         .pipe(concat('scripts.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({ stream: true }))
